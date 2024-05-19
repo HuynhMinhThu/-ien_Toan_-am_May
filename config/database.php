@@ -7,10 +7,10 @@
 	ob_start();
   		session_start(); 
  header("Content-type: text/html; charset=utf-8");
- $tenmaychu='q3vtafztappqbpzn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	';
- $tentaikhoan='l7w2c5rpp7ppc72d';
- $pass='iny7imharohzdpbz';
- $csdl='m6jb8xbm9pb7hc0k';
+ $tenmaychu='us-cluster-east-01.k8s.cleardb.net';
+ $tentaikhoan='b643ca59e40a14';
+ $pass='46cbc92f';
+ $csdl='heroku_0417280b1716f23';
  $conn=mysqli_connect($tenmaychu, $tentaikhoan, $pass, $csdl);
  mysqli_select_db($conn,$csdl);
  mysqli_query($conn,"SET NAMES 'UTF8'");
