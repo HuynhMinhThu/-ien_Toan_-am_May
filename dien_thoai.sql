@@ -34,7 +34,6 @@ CREATE TABLE `baohanh` (
   `MaSP` varchar(50) COLLATE utf8mb4_vietnamese_ci NOT NULL,
   `MaHD` int(11) NOT NULL,
   `SDTKH` bigint(20) NOT NULL,
-  `NgayBD` date NOT NULL DEFAULT current_timestamp(),
   `NgayKT` date NOT NULL,
   `MoTa` varchar(500) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
@@ -43,11 +42,11 @@ CREATE TABLE `baohanh` (
 -- Đang đổ dữ liệu cho bảng `baohanh`
 --
 
-INSERT INTO `baohanh` (`MaBH`, `MaKH`, `MaSP`, `MaHD`, `SDTKH`, `NgayBD`, `NgayKT`, `MoTa`) VALUES
-(1, 1, 'IP732', 11, 778923743, '2019-12-31', '2021-12-31', 'Chính sách bảo hành 2 năm về phần cứng điện thoại'),
-(2, 1, 'SSGLA70', 11, 778923743, '2019-12-31', '2021-12-31', 'Chính sách bảo hành 2 năm về phần cứng điện thoại'),
-(3, 1, 'SSGLS10', 11, 778923743, '2019-12-31', '2021-12-31', 'Chính sách bảo hành 2 năm về phần cứng điện thoại'),
-(7, 1, 'VivoV1564', 20, 778923743, '2019-12-31', '2021-12-31', 'Chính sách bảo hành 2 năm về phần cứng điện thoại');
+INSERT INTO `baohanh` (`MaBH`, `MaKH`, `MaSP`, `MaHD`, `SDTKH`, `NgayKT`, `MoTa`) VALUES
+(1, 1, 'IP732', 11, 778923743, '2021-12-31', 'Chính sách bảo hành 2 năm về phần cứng điện thoại'),
+(2, 1, 'SSGLA70', 11, 778923743, '2021-12-31', 'Chính sách bảo hành 2 năm về phần cứng điện thoại'),
+(3, 1, 'SSGLS10', 11, 778923743, '2021-12-31', 'Chính sách bảo hành 2 năm về phần cứng điện thoại'),
+(7, 1, 'VivoV1564', 20, 778923743, '2021-12-31', 'Chính sách bảo hành 2 năm về phần cứng điện thoại');
 
 -- --------------------------------------------------------
 
@@ -426,6 +425,7 @@ CREATE TABLE `nhanvien` (
 
 INSERT INTO `nhanvien` (`MaNV`, `HoTen`, `DiaChi`, `SDT`, `MatKhau`, `Quyen`) VALUES
 ('NV1', 'Nhân viên A', NULL, NULL, '123456', 1);
+
 
 -- --------------------------------------------------------
 
